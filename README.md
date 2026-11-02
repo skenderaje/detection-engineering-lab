@@ -1,8 +1,13 @@
-# Detection Engineering Lab
+# Detection Engineering Lab — AI Security
 
-Un laboratorio virtuale isolato (Active Directory + SIEM) per studiare in modo pratico la cybersecurity defensiva: eseguire tecniche offensive note in modo controllato, verificare cosa arriva davvero al sistema di monitoraggio, e scrivere/validare regole di detection — non solo "far scattare un allarme", ma dimostrare la catena completa evento → SIEM → regola → alert.
+Un laboratorio virtuale isolato (Active Directory + SIEM) per studiare in modo pratico la cybersecurity defensiva, con un obiettivo specifico: **sistemi di detection e difesa contro le intrusioni legate all'intelligenza artificiale**, in due direzioni:
 
-**Stato: in costruzione.** Il lab è operativo e verificato a livello infrastrutturale; gli esercizi di detection (contenuto di `writeups/`, `detections/`, `evidence/`) sono in corso.
+1. **Attacchi condotti/potenziati da AI** contro un'infrastruttura normale — agenti autonomi offensivi, pattern di attacco generati da LLM, e come distinguerli da un attaccante umano (vedi [`ai-security/agentic-attacks/`](ai-security/agentic-attacks/README.md)).
+2. **Intrusioni nei sistemi AI stessi** — prompt injection, jailbreak, data poisoning, abuso di tool-calling contro applicazioni basate su LLM (vedi [`ai-security/llm-app-security/`](ai-security/llm-app-security/README.md)).
+
+La base del lab (dominio Active Directory + SIEM, descritta sotto) resta l'infrastruttura e il metodo su cui si costruiscono entrambi i filoni: eseguire tecniche offensive note in modo controllato, verificare cosa arriva davvero al sistema di monitoraggio, e scrivere/validare regole di detection — non solo "far scattare un allarme", ma dimostrare la catena completa evento → SIEM → regola → alert.
+
+**Stato: in costruzione.** Il lab è operativo e verificato a livello infrastrutturale; sia gli esercizi di detection "classici" (`writeups/`, `detections/`, `evidence/`) sia quelli specifici AI security (`ai-security/`) sono ancora da eseguire.
 
 ## Perché esiste
 
@@ -65,11 +70,14 @@ Nessuno di questi richiede payload malevoli reali o software piratato.
 
 ```
 detection-engineering-lab/
-├── README.md       # questo file
-├── docs/           # diagrammi, note di architettura
-├── detections/     # una regola per tecnica testata, con mapping ATT&CK
-├── evidence/       # log/esiti sanificati, un sottocartella per esercizio
-└── writeups/       # un report per esercizio: scopo, eseguito, osservato, limiti
+├── README.md               # questo file
+├── docs/                   # diagrammi, note di architettura
+├── detections/             # una regola per tecnica testata, con mapping ATT&CK
+├── evidence/               # log/esiti sanificati, una sottocartella per esercizio
+├── writeups/               # un report per esercizio: scopo, eseguito, osservato, limiti
+└── ai-security/
+    ├── agentic-attacks/    # rilevare attacchi condotti/potenziati da AI
+    └── llm-app-security/   # proteggere applicazioni basate su LLM (prompt injection, jailbreak, tool abuse)
 ```
 
 ## Metodologia per ogni esercizio
