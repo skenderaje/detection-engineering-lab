@@ -76,9 +76,10 @@ detection-engineering-lab/
 ├── evidence/               # log/esiti sanificati, una sottocartella per esercizio
 ├── writeups/               # un report per esercizio: scopo, eseguito, osservato, limiti
 └── ai-security/
-    ├── agentic-attacks/    # rilevare attacchi condotti/potenziati da AI
-    ├── attribuzione/       # risalire all'operatore umano dietro un agente AI
-    └── llm-app-security/   # proteggere applicazioni basate su LLM (prompt injection, jailbreak, tool abuse)
+    ├── agentic-attacks/         # rilevare attacchi condotti/potenziati da AI
+    ├── attribuzione/            # risalire all'operatore umano dietro un agente AI
+    ├── casistica-bersagli.md    # scenari per tipo di bersaglio, con casi reali
+    └── llm-app-security/        # proteggere applicazioni basate su LLM (prompt injection, jailbreak, tool abuse)
 ```
 
 ## Metodologia per ogni esercizio
