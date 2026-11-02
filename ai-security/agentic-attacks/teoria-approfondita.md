@@ -20,17 +20,19 @@ Dato grezzo: il file YAML ufficiale di ATLAS ([atlas.mitre.org/atlas-data](https
 | 10 | AML.TA0009 | Collection | = ATT&CK TA0009 | AI Artifact Collection, Data from Information Repositories, Data from Local System |
 | 11 | AML.TA0010 | Exfiltration | = ATT&CK TA0010 | Exfiltration via AI Inference API, Extract AI Model, Exfiltration via Cyber Means |
 | 12 | AML.TA0011 | Impact | = ATT&CK TA0040 | Denial of AI Service, Erode AI Model Integrity, Cost Harvesting |
-| 13 | AML.TA0012 | Privilege Escalation | = ATT&CK TA0004 | (non visibile nella porzione di dati letta) |
-| 14 | AML.TA0013 | Credential Access | = ATT&CK TA0006 | Valid Accounts |
-| 15 | AML.TA0014 | Command and Control | = ATT&CK TA0011 | (non visibile nella porzione di dati letta) |
-| 16 | AML.TA0015 | Lateral Movement | = ATT&CK TA0008 | (non visibile nella porzione di dati letta) |
+| 13 | AML.TA0012 | Privilege Escalation | = ATT&CK TA0004 | LLM Jailbreak (T0054) |
+| 14 | AML.TA0013 | Credential Access | = ATT&CK TA0006 | Valid Accounts; OS Credential Dumping (T0090) |
+| 15 | AML.TA0014 | Command and Control | = ATT&CK TA0011 | LLM Jailbreak (T0054); AI Agent (T0108); AI Service API (T0096); Reverse Shell (T0072) |
+| 16 | AML.TA0015 | Lateral Movement | = ATT&CK TA0008 | Process Discovery (T0089); OS Credential Dumping (T0090); Use Alternate Authentication Material (T0091) |
 
 **Dove si applica a ciascun filone del repo:**
 
 - [`ai-security/agentic-attacks/`](README.md) (bersaglio = infrastruttura normale, attaccante = AI): le tattiche rilevanti sono quelle **condivise con ATT&CK** (Reconnaissance, Initial Access, Execution...). ATLAS aggiunge poco qui, perché il sistema attaccato non è un modello AI.
 - [`ai-security/llm-app-security/`](../llm-app-security/README.md) (bersaglio = il sistema AI stesso): qui diventano centrali le due tattiche **specifiche AI** (AI Model Access, AI Attack Staging) e le tecniche AI-specifiche dentro le altre tattiche (es. "Manipulate AI Model" sotto Persistence, "Craft Adversarial Data" sotto Defense Evasion, "Exfiltration via AI Inference API" sotto Exfiltration).
 
-**Limite della lettura**: il file YAML è grande (717.000+ caratteri) e letto solo in parte (i primi ~100.000 caratteri); la tabella delle tecniche "non visibile" per Privilege Escalation/C2/Lateral Movement va completata con una lettura successiva se servono tecniche specifiche di quelle tattiche.
+**Aggiornamento tecniche mancanti** (letti altri 100.000 caratteri del file, offset 100.000-200.000): le tecniche per Privilege Escalation/C2/Lateral Movement sono state ricavate dai riferimenti incrociati nelle descrizioni, non da un elenco esplicito per tattica — il file non espone ancora, nella porzione letta, una pagina "tattica → lista tecniche" diretta. Nota rilevante: **AML.T0054 (LLM Jailbreak)** compare sia sotto Privilege Escalation sia sotto Command and Control — un jailbreak riuscito non è "solo" un bypass delle istruzioni, è classificato come un modo per ottenere privilegi o aprire un canale C2. Questo collega direttamente ATLAS al filone [`llm-app-security/`](../llm-app-security/README.md), dove il jailbreak è già una delle classi di attacco previste.
+
+**Limite della lettura**: il file YAML è grande (717.000+ caratteri); letti i primi 200.000 (su 717.172). Il resto (circa 517.000 caratteri) non è stato letto — se servirà la pagina "tattica → tecniche" completa e ufficiale, conviene consultare direttamente atlas.mitre.org/techniques (il dominio web, non il solo file dati) quando sarà di nuovo raggiungibile.
 
 ## 2. Metodologia statistica per distinguere agente AI da operatore umano
 

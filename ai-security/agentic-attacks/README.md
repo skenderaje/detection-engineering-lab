@@ -12,6 +12,8 @@ Ricerca e metodo ricostruito da casi documentati (Anthropic GTG-1002, "vibe hack
 
 Approfondimento teorico (MITRE ATLAS, metodologia statistica per distinguere agente AI da operatore umano, altri casi pubblici OpenAI/Microsoft, strumenti dual-use pericolosi): vedi [teoria-approfondita.md](teoria-approfondita.md).
 
+Specifica concettuale della regola di detection (struttura logica, nessuna soglia inventata): vedi [detection-rule-spec.md](detection-rule-spec.md). L'harness tecnico (script agente, pipeline log, analisi statistica, compilazione della regola con dati reali) è in costruzione in `harness/` (lavoro assegnato a Codex).
+
 Nessun esercizio ancora eseguito. Setup previsto: un agente AI con accesso controllato a tool di rete, lanciato dalla postazione di verifica (Kali) contro la workstation/DC del dominio, con logging completo lato bersaglio prima di qualunque tentativo di detection.
 
 Metodo: stesso schema del resto del lab — Scopo / Macchina / Prerequisiti / Risultato atteso / Prove da raccogliere / Condizioni per fermarsi. Vedi [writeups/](../../writeups/README.md) per il formato dei report.
