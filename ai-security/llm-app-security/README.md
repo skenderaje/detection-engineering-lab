@@ -14,4 +14,6 @@ Per ogni classe, l'esercizio dovrà produrre: il tentativo eseguito, cosa ha eff
 
 Ricerca e teoria (OWASP Top 10 per LLM, many-shot jailbreaking, casi reali di prompt injection indiretta — EchoLeak, OpenAI Codex, Salesforce Agentforce —, vulnerabilità MCP): vedi [teoria.md](teoria.md).
 
+Spec dell'esperimento di prompt injection indiretta (architettura della mini-app, i tre tool, le 4 varianti di payload, bozza di regola di detection) — non ancora eseguito: vedi [payload-prompt-injection.md](payload-prompt-injection.md).
+
 Nessun esercizio ancora eseguito. Metodo: stesso schema del resto del lab — Scopo / Macchina / Prerequisiti / Risultato atteso / Prove da raccogliere / Condizioni per fermarsi. Vedi [writeups/](../../writeups/README.md) per il formato dei report.
