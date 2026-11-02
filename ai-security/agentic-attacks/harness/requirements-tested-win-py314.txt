@@ -1,0 +1,6 @@
+# Environment used for offline validation, Windows Python 3.14.8.
+pandas==2.3.3
+numpy==2.5.4
+python-dateutil==4.0.0
+pytz==2026.6
+tzdata==2026.6

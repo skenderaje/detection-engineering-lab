@@ -1,0 +1,20 @@
+# NON DISTRIBUIBILE: template di contratto per un futuro estrattore di feature.
+# Sigma non calcola entropia/Markov da eventi Sysmon individuali.
+title: Agentic behaviour hypothesis - requires empirical validation
+status: experimental
+description: Features from a separately validated target-side aggregation pipeline.
+logsource:
+  category: application
+  product: agentic_lab_features
+detection:
+  selection:
+    feature_schema: '<VALIDATED_SCHEMA_VERSION>'
+    sample_count|gte: '<MIN_SAMPLE_COUNT_FROM_VALIDATION>'
+    timing_entropy|lte: '<ENTROPY_THRESHOLD_FROM_TRAINING>'
+    timing_cce|lte: '<CCE_THRESHOLD_FROM_TRAINING>'
+    markov_bits|gte: '<MARKOV_THRESHOLD_FROM_TRAINING>'
+  condition: selection
+falsepositives:
+  - Administrative automation, audit scripts, human use of batch tools
+level: '<LEVEL_AFTER_VALIDATION>'
+# Anche operatori lte/gte e congiunzione sono ipotesi da rivedere sui dati.
