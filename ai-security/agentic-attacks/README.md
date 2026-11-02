@@ -8,6 +8,8 @@ Ipotesi di lavoro da verificare con esercizi reali, non da assumere:
 - **Pattern di enumerazione esaustiva**: un agente tende a provare sistematicamente più percorsi in sequenza stretta (es. tutte le share SMB, tutti gli utenti) dove un umano procederebbe in modo più selettivo
 - **Firma del tool-calling**: se l'agente usa wrapper standard (es. uno specifico framework di tool-use), i comandi generati possono avere formattazione/argomenti ricorrenti riconoscibili nei log
 
+Ricerca e metodo ricostruito da casi documentati (Anthropic GTG-1002, "vibe hacking"): vedi [metodo-ricostruito.md](metodo-ricostruito.md).
+
 Nessun esercizio ancora eseguito. Setup previsto: un agente AI con accesso controllato a tool di rete, lanciato dalla postazione di verifica (Kali) contro la workstation/DC del dominio, con logging completo lato bersaglio prima di qualunque tentativo di detection.
 
 Metodo: stesso schema del resto del lab — Scopo / Macchina / Prerequisiti / Risultato atteso / Prove da raccogliere / Condizioni per fermarsi. Vedi [writeups/](../../writeups/README.md) per il formato dei report.
