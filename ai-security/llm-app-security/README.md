@@ -12,4 +12,6 @@ Classi di attacco previste, ciascuna con un esercizio dedicato quando verrà ese
 
 Per ogni classe, l'esercizio dovrà produrre: il tentativo eseguito, cosa ha effettivamente fatto l'agente (non cosa si pensava avrebbe fatto), quali log/segnali erano disponibili per rilevarlo, e quale mitigazione è stata applicata (es. validazione dell'output, allowlist sui tool, separazione tra istruzioni di sistema e contenuto esterno).
 
+Ricerca e teoria (OWASP Top 10 per LLM, many-shot jailbreaking, casi reali di prompt injection indiretta — EchoLeak, OpenAI Codex, Salesforce Agentforce —, vulnerabilità MCP): vedi [teoria.md](teoria.md).
+
 Nessun esercizio ancora eseguito. Metodo: stesso schema del resto del lab — Scopo / Macchina / Prerequisiti / Risultato atteso / Prove da raccogliere / Condizioni per fermarsi. Vedi [writeups/](../../writeups/README.md) per il formato dei report.
