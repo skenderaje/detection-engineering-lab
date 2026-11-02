@@ -10,6 +10,8 @@ Ipotesi di lavoro da verificare con esercizi reali, non da assumere:
 
 Ricerca e metodo ricostruito da casi documentati (Anthropic GTG-1002, "vibe hacking"): vedi [metodo-ricostruito.md](metodo-ricostruito.md).
 
+Approfondimento teorico (MITRE ATLAS, metodologia statistica per distinguere agente AI da operatore umano, altri casi pubblici OpenAI/Microsoft, strumenti dual-use pericolosi): vedi [teoria-approfondita.md](teoria-approfondita.md).
+
 Nessun esercizio ancora eseguito. Setup previsto: un agente AI con accesso controllato a tool di rete, lanciato dalla postazione di verifica (Kali) contro la workstation/DC del dominio, con logging completo lato bersaglio prima di qualunque tentativo di detection.
 
 Metodo: stesso schema del resto del lab — Scopo / Macchina / Prerequisiti / Risultato atteso / Prove da raccogliere / Condizioni per fermarsi. Vedi [writeups/](../../writeups/README.md) per il formato dei report.
