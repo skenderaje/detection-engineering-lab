@@ -1,0 +1,6 @@
+# Credenziali, chiavi, segreti: non devono mai finire su GitHub
+*.pem
+*.key
+.env
+secrets/
+private/
