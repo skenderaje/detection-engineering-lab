@@ -4,3 +4,7 @@
 .env
 secrets/
 private/
+
+# Artefatti locali, non riproducibili dal codice
+__pycache__/
+*.pyc

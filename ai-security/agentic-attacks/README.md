@@ -14,6 +14,8 @@ Approfondimento teorico (MITRE ATLAS, metodologia statistica per distinguere age
 
 Specifica concettuale della regola di detection (struttura logica, nessuna soglia inventata): vedi [detection-rule-spec.md](detection-rule-spec.md). L'harness tecnico (script agente, pipeline log, analisi statistica, compilazione della regola con dati reali) è in costruzione in `harness/` (lavoro assegnato a Codex).
 
+Specifica dell'agente offensivo che l'harness dovrà guidare — quale tecnica concreta (enumerazione AD + Kerberoasting), con quale architettura controller/gate umano/whitelist, e con quali limiti dichiarati: vedi [agente-offensivo-spec.md](agente-offensivo-spec.md). La controparte difensiva — un agente che legge gli artefatti prodotti da questa sessione e propone una bozza di triage, senza etichettare "AI" né agire sul bersaglio — è in [`ai-security/agentic-defense/`](../agentic-defense/README.md).
+
 Nessun esercizio ancora eseguito. Setup previsto: un agente AI con accesso controllato a tool di rete, lanciato dalla postazione di verifica (Kali) contro la workstation/DC del dominio, con logging completo lato bersaglio prima di qualunque tentativo di detection.
 
 Metodo: stesso schema del resto del lab — Scopo / Macchina / Prerequisiti / Risultato atteso / Prove da raccogliere / Condizioni per fermarsi. Vedi [writeups/](../../writeups/README.md) per il formato dei report.
