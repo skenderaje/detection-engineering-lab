@@ -76,6 +76,7 @@ detection-engineering-lab/
 ├── detections/             # una regola per tecnica testata, con mapping ATT&CK
 ├── evidence/               # log/esiti sanificati, una sottocartella per esercizio
 ├── writeups/               # un report per esercizio: scopo, eseguito, osservato, limiti
+├── attacco-difesa/         # schede concettuali attacco → difese (CVE recenti), pre-esecuzione
 └── ai-security/
     ├── agentic-attacks/         # rilevare attacchi condotti/potenziati da AI
     ├── agentic-defense/         # agente di triage che legge gli artefatti del lab e propone bozze di write-up
